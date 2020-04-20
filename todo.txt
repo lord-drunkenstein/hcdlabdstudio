@@ -1,0 +1,6 @@
+scrollbar to the right
+pointer in the right as a button with description
+highlight selected styles
+fix css and react 
+
+having a popup

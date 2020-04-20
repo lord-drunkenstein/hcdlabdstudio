@@ -4,12 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/logo.png">
-    <title>
-        DS customiser studio
-    </title>
+    <title>DS customiser studio</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -20,348 +17,89 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/css/rainbowtheme.css" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/@shopify/polaris@4.18.0/styles.min.css"
+/>
 </head>
 
 <body class=" rtl menu-on-right ">
-    <div class="wrapper">
-        <div class="sidebar">
-            <!--
-               Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
-               -->
-            <style type="text/css">
-                .list-group-item-sidebar {
-                    padding: 5px;
-                    margin-right: 3px;
-                    margin-left: 3px;
-                    background-color: #24282b;
-                    border-color: #2b3553;
-                    color: white;
-                }
-                
-                .list-group-item-sidebar > input {
-                    background-color: #41474C;
-                    color: #FFF;
-                    border: none;
-                    font-size: 13px;
-                    padding: 0 8px;
-                    "
-
-                }
-                
-                .list-group-item-sidebar > select {
-                    background-color: #41474C;
-                    color: #FFF;
-                    border: none;
-                    font-size: 13px;
-                    padding: 0 8px;
-                    "
-
-                }
-                /* navbar styles*/
-                
-                .btn-collapse-nav {
-                    float: right;
-                    backface-visibility: hidden;
-                    background-color: transparent;
-                    border-color: transparent;
-                }
-                
-                .navTitle {
-                    color: white;
-                    background-color: #fa5731;
-                    padding: 8px;
-                    font-style: oblique;
-                    font-variant-caps: all-small-caps;
-                    font-weight: bold;
-                    margin-bottom: 20px;
-       
-                }
-
-
-                #navTitle{
-                    color: white;
-
-    padding: 0px;
-    font-style: oblique;
-    font-variant-caps: all-small-caps;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 0px;
-    /* padding-top: 2px; */
-    padding-right: 0px;
-                }
-
-
-                .btn-tab {
-                                          
-                        color: white;
-                        font-size: 15px;
-                        border: 0px;
-                        margin: 0px;
-                        padding: 10px;
-                        border-top-color: #fa5731;
-                        border-top: 3px;
-                         font-style: oblique;
-                                        font-variant-caps: all-small-caps;
-                                        font-weight: bold;
-                                            width: 49.1%;
-    background-color: #e08b77;
-                }
-
-
-                .btn-tab:focus{
-                    background-color: #fa5731;
-                }
-
-                 .btn-tab:hover{
-                    background-color: #e08b77;
-                }
-
-                .btn-tab:active{
-                    background-color: #fa5731;
-                }
-
-           
-                /* navbar scroll styles*/
-                
-                #stylesSection::-webkit-scrollbar {
-                    width: 0.2em;
-                    float: right;
-                }
-                
-                #stylesSection::-webkit-scrollbar-track {
-                    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                }
-                
-                #stylesSection::-webkit-scrollbar-thumb {
-                    background-color: #fa5731;
-                    outline: 1px solid slategrey;
-                    width: 10px;
-                }
-
-               #loaded-site::-webkit-scrollbar {
-                    width: 0.2em;
-                    float: right;
-                }
-                
-                #loaded-site::-webkit-scrollbar-track {
-                    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                }
-                
-                #loaded-site::-webkit-scrollbar-thumb {
-                    background-color: #fa5731;
-                    outline: 1px solid slategrey;
-                    width: 10px;
-                }
-
-
-                #stylesSection{
-        
-    overflow: auto;
-    /* width: 600px; */
-    overflow-y: scroll;
-    /* position: relative; */
-    height: 900px;
-    /* height: 500px; */
-    min-height: px;
-direction: ltr;
-                }
-            
-            .navSubsection{
-                   padding: 3px;
-    font-size: 12px;
-    list-style: none;
-
-            }
-
-
-            .elementTitle{
-               color: white;
-    /* margin: 8px; */
-    /* margin-bottom: 9px; */
-    font-weight: bold;
-    padding: 8px;
-    border-bottom: 1px solid #fa5731;
-        margin-bottom: 10px;
-            }
-
-            .collapseIcon{
-                   color: white;
-    font-weight: bold;
-    font-size: 20px;
-            }
-
-
-            .fa-angle-down{
-                  color: white;
-    font-weight: bold;
-    font-size: 20px;
-            }
-
-
-
-.input-css{
-
-       background-color: #41474C !important;
-    color: #FFF !important; 
-    border: none !important;
-    font-size: 13px !important;
-    padding: 0 8px !important;
-        height: 25px !important;
-            width: 57% !important;
-}
-
-
-.inputLayout {
-   width: 20% !important;
-          background-color: #41474C !important;
-    color: #FFF !important; 
-    border: none !important;
-    font-size: 13px !important;
-    padding: 0 8px !important;
-        height: 25px !important;
-            width: 50% !important;
-}
-
-
-.btn-apply{
-   background-color: #fa5731;
-    border: 0px;
-    margin: 5px;
-    padding: 8px;
-    color: white;
-    border-radius: 3px;
-    width: -webkit-fill-available;
-}
-
-.extracted-list{
-
-       padding: 0px;
-    margin-left: 10px;
-    margin-top: 0px;
-}
-
-
-.toggleementcard{
-    padding: 10px 10px 0px;
-    margin: 0px;
-}
-
-
-            </style>
-
-        <div class="sidebar-wrapper" style="    background-color: #24282b; width: 135%;  overflow: hidden; ">
-                <div id="navTitle"> 
-
-                    
-                     <button type="button" class="btn-tab" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="animations" onclick="$('#styleattributes').hide();$('#animations').show()">Code</button>
-
-
-                    <button type="button" class="btn-tab active" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="styleattributes" onclick="$('#animations').hide();$('#styleattributes').show()">Styles</button>
-
-                         
-      
+    <div class="sidebar" style="   background-color: #32373a;overflow: hidden; ">
+        <div id="navTitle">
+            <button type="button" class="btn-tab" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="animations" onclick="$('#styleattributes').hide();$('#animations').show()">Code</button>
+            <button type="button" class="btn-tab active" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="styleattributes" onclick="$('#animations').hide();$('#styleattributes').show()">Styles</button>
+        </div>
+        <div id="stylesSection">
+            <div id="animations" class="collapse">
+                <div class="navSubsection">
+                    <div class="elementTitle">Code
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#animationSection" aria-expanded="false" aria-controls="animationSection"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
+                    </div>
                 </div>
-
-                <div id="stylesSection" >
-                    <div id="animations" class="collapse">
-
-                              <div class="navSubsection">
-                     <div class="elementTitle">
-                   Code
-                    <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#animationSection" aria-expanded="false" aria-controls="animationSection"><i class="fas fa-angle-down collapseIcon"></i></button>
-
-                     </div>
-              
+            </div>
+            <div id="styleattributes" class="collapse show">
+                <div class="navSubsection">
+                    <div class="elementTitle">Layout
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#layout" aria-expanded="false" aria-controls="layout"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
                     </div>
 
+                    <input id="componentClass" value="waiting to be set" style="visibility: hidden;    font-size: 0px;">
 
-
-
-
-
-
-                    </div>
-
-                  <div id="styleattributes" class="collapse show">
-
-                  <div class="navSubsection">
-                     
-                     <div class="elementTitle">
-                   Layout
-                    <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#layout" aria-expanded="false" aria-controls="layout"><i class="fas fa-angle-down collapseIcon"></i></button>
-
-                     </div>
-
-                    <ul id="layout" class="list-group collapse show" style=" background-color: #24282b;">
-                        <li class="list-group-item-sidebar "> Width
+                    <ul id="layout" class="list-group collapse show rtl" style=" background-color: #24282b;">
+                        <li class="list-group-item-sidebar ">Width
                             <input id="componentwidth" type="text" name="test1" class="input-css col-md-8" placeholder="px">
-
                         </li>
                         <li class="list-group-item-sidebar">Height
                             <input id="componentheight" type="text" class="input-css col-md-8" placeholder="px">
                         </li>
                         <li class="list-group-item-sidebar">Margin
-                            <input id="componentmargin" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px"> 
-                            <input id="componentmargin" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
-                            <input id="componentmargin" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
-                            <input id="componentmargin" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentmargin-left" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentmargin-bottom" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentmargin-right" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentmargin-top" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
                         </li>
                         <li class="list-group-item-sidebar">Padding
-                         
-                             <input id="componentpadding" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px"> 
-                            <input id="componentpadding" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
-                            <input id="componentpadding" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
-                            <input id="componentpadding" type="text" class="input-css col-md-8" placeholder="px"pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentpadding-left" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentpadding-bottom" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentpadding-right" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
+                            <input id="componentpadding-top" type="text" class="input-css col-md-8" placeholder="px" pseIcon style=" width: 13% !important; margin-right: 3px">
                         </li>
                     </ul>
-
-                 </div>
-
-
-                    <div class="navSubsection">
-                     <div class="elementTitle">
-                
-                    Backgound
-                    <button type="button" class="btn-collapse-nav"  data-toggle="collapse" data-target="#background" aria-expanded="false" aria-controls="background"><i class="fas fa-angle-down collapseIcon"></i></button>
-
-                        </div>
+                </div>
+                <div class="navSubsection">
+                    <div class="elementTitle">Backgound
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#background" aria-expanded="false" aria-controls="background"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
+                    </div>
                     <ul id="background" class="list-group collapse show" style=" background-color: #24282b;">
-                        <li class="list-group-item-sidebar "> Bg Color
-                            <input id="componentbackground-color" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
+                        <li class="list-group-item-sidebar ">Bg Color
+                            <input id="componentbackground-color" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
                         </li>
                         <li class="list-group-item-sidebar">Bg Image
-                            <input id="componentbackground-image" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
+                            <input id="componentbackground-image" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
                         </li>
                     </ul>
+                </div>
+                <div class="navSubsection">
+                    <div class="elementTitle">Fonts
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#color" aria-expanded="false" aria-controls="color"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
                     </div>
-
-        
-         
-                    <div class="navSubsection">
-                     <div class="elementTitle">
-                   
-                   Fonts
-
-
-
-                    <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#color" aria-expanded="false" aria-controls="color"><i class="fas fa-angle-down collapseIcon"></i></button>
-                 </div>
                     <ul id="color" class="list-group collapse show" style=" background-color: #24282b;">
-                        <li class="list-group-item-sidebar "> FontStyle
-                            <input id="componentfontStyle" type="text" class="input-css col-md-8" placeholder=""pseIcon>
+                        <li class="list-group-item-sidebar ">FontStyle
+                            <input id="componentfontStyle" type="text" class="input-css col-md-8" placeholder="" pseIcon>
                         </li>
                         <li class="list-group-item-sidebar">Font size
-                            <input id="componentfont-size" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
+                            <input id="componentfont-size" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
                         </li>
-
-                          <li class="list-group-item-sidebar "> FontWeight
-                            <input id="componentfontWeight" type="text" class="input-css col-md-8" placeholder=""pseIcon>
+                        <li class="list-group-item-sidebar ">FontWeight
+                            <input id="componentfontWeight" type="text" class="input-css col-md-8" placeholder="" pseIcon>
                         </li>
                         <li class="list-group-item-sidebar">FontVariantCaps
-                            <input id="componentfontVariantCaps" type="text" class="input-css col-md-8" placeholder=""pseIcon>
+                            <input id="componentfontVariantCaps" type="text" class="input-css col-md-8" placeholder="" pseIcon>
                         </li>
-
                         <li class="list-group-item-sidebar">Font Family
                             <input id="componentfont-family" type="text" class="input-css col-md-8" placeholder="MonoFree" style="background-color: #41474C;
                         color: #FFF;
@@ -370,218 +108,177 @@ direction: ltr;
                         padding: 0 8px;">
                         </li>
                     </ul>
-                 </div>
-                 
-
-                    <div class="navSubsection">
-                     <div class="elementTitle">
-                    Border
-                    <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#border" aria-expanded="false" aria-controls="border"><i class="fas fa-angle-down collapseIcon"></i></button>
-                 </div>
+                </div>
+                <div class="navSubsection">
+                    <div class="elementTitle">Border
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#border" aria-expanded="false" aria-controls="border"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
+                    </div>
                     <ul id="border" class="list-group collapse show" style=" background-color: #24282b;">
-                        <li class="list-group-item-sidebar "> border-raduis
-                            <input id="componentborder-raduis" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
+                        <li class="list-group-item-sidebar ">border-raduis
+                            <input id="componentborder-raduis" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
                         </li>
                         <li class="list-group-item-sidebar">Border-color
                             <input id="componentborder-color" type="text" class="input-css col-md-8" placeholder="">
                         </li>
                         <li class="list-group-item-sidebar">border-size
-                            <input id="componentborder-size" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
+                            <input id="componentborder-size" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
                         </li>
-                      
                     </ul>
-                 </div>
-
-
-                    <div class="navSubsection">
-                     <div class="elementTitle">
-                    Toggle Elements state
-                    <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#align" aria-expanded="false" aria-controls="align"><i class="fas fa-angle-down collapseIcon"></i></button>
-                 </div>
-                    <ul id="align" class="list-group collapse show" style=" background-color: #24282b;">
-                      
-                      <div id="accordion">
-  <div class="card" style="margin-bottom: 3px;">
-    <div class="card-header elementTitle toggleementcard" id="headingOne">
-        Hover
-        <button class="btn-collapse-nav" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="far fa-check-circle collapseIcon"></i>
-        </button>
-     
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body" style="    background-color: #24282b;" list->
-      
-         <ul style=" background-color: #24282b; list-style: none;">
-                        <li class="list-group-item-sidebar "> Bg-color
-                            <input id="componenthoverbackground-color" type="text" class="input-css col-md-8" placeholder="rgb"pseIcon>
-                        </li>
-                        <li class="list-group-item-sidebar">Border-color
-                            <input id="componenthoverborder-color" type="text" class="input-css col-md-8" placeholder="rgb">
-                        </li>
-                        <li class="list-group-item-sidebar">Color
-                            <input id="componenthovercolor" type="text" class="input-css col-md-8" placeholder="rgb"pseIcon>
-                        </li>
-                      
-                    </ul>
-
-      </div>
-    </div>
-  </div>
-  <div class="card"  style="margin-bottom: 3px;">
-    <div class="card-header elementTitle toggleementcard" id="headingTwo">
-        Focus
-        <button class="btn-collapse-nav collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <i class="far fa-check-circle collapseIcon"></i>
-        </button>
-    
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-  <ul style=" background-color: #24282b; list-style: none;">
-                        <li class="list-group-item-sidebar "> Bg-color
-                            <input id="componentborder-raduis" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
-                        </li>
-                        <li class="list-group-item-sidebar">Border-color
-                            <input id="componentborder-color" type="text" class="input-css col-md-8" placeholder="">
-                        </li>
-                        <li class="list-group-item-sidebar">Color
-                            <input id="componentborder-size" type="text" class="input-css col-md-8" placeholder="px"pseIcon>
-                        </li>
-                      
-                    </ul>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-
-                    </ul>
-                </div>  
-
-                </div>            
-
-                <button class="btn-apply" onclick="applyCss()">Apply Css</button>
-                <div class="navTitle"> Extracted Styles
-                  <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#extractedcss" aria-expanded="false" aria-controls="extractedcss"><i class="far fa-minus-square collapseIcon"></i></button>
-               </div>
-               
-               <div id="extractedcss">
-
-                <ul class="list-group collapse show rainbow-show" id="eCssSection">
-                 
-                     
-                </ul>
-
                 </div>
-
-                <button class="btn-apply" onclick="GenerateDesignSystem()">Generate DS Css</button>
-
-
-                  </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="main-panel">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
-                <div class="container-fluid">ed
-                    <div class="navbar-wrapper">
-                        <div class="navbar-toggle d-inline">
-                            <button type="button" class="navbar-toggler">
-                                <span class="navbar-toggler-bar bar1"></span>
-                                <span class="navbar-toggler-bar bar2"></span>
-                                <span class="navbar-toggler-bar bar3"></span>
-                            </button>
-                        </div>
-                        <div class="logo">
-                            <div class="photo">
-                                <img src="../assets/img/logo.png" alt="HCDLAB">
+                <div class="navSubsection">
+                    <div class="elementTitle">Toggle Elements state
+                        <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#align" aria-expanded="false" aria-controls="align"><i class="fas fa-angle-down collapseIcon"></i>
+                        </button>
+                    </div>
+                    <ul id="align" class="list-group collapse show" style=" background-color: #24282b;">
+                        <div id="accordion">
+                            <div class="card" style="margin-bottom: 3px;">
+                                <div class="card-header elementTitle toggleementcard" id="headingOne">Hover
+                                    <button class="btn-collapse-nav" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="far fa-check-circle collapseIcon"></i>
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body" style="    background-color: #24282b;" list->
+                                        <ul style=" background-color: #24282b; list-style: none;">
+                                            <li class="list-group-item-sidebar ">Bg-color
+                                                <input id="componenthoverbackground-color" type="text" class="input-css col-md-8" placeholder="rgb" pseIcon>
+                                            </li>
+                                            <li class="list-group-item-sidebar">Border-color
+                                                <input id="componenthoverborder-color" type="text" class="input-css col-md-8" placeholder="rgb">
+                                            </li>
+                                            <li class="list-group-item-sidebar">Color
+                                                <input id="componenthovercolor" type="text" class="input-css col-md-8" placeholder="rgb" pseIcon>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="javascript:void(0)" class="simple-text logo-mini" style="font-weight: 1000;">
+                            <div class="card" style="margin-bottom: 3px;">
+                                <div class="card-header elementTitle toggleementcard" id="headingTwo">Focus
+                                    <button class="btn-collapse-nav collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="far fa-check-circle collapseIcon"></i>
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul style=" background-color: #24282b; list-style: none;">
+                                            <li class="list-group-item-sidebar ">Bg-color
+                                                <input id="componentborder-raduis" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
+                                            </li>
+                                            <li class="list-group-item-sidebar">Border-color
+                                                <input id="componentborder-color" type="text" class="input-css col-md-8" placeholder="">
+                                            </li>
+                                            <li class="list-group-item-sidebar">Color
+                                                <input id="componentborder-size" type="text" class="input-css col-md-8" placeholder="px" pseIcon>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-apply" onclick="applyCss()">Apply Css</button>
+            <div class="navTitle">Extracted Styles
+                <button type="button" class="btn-collapse-nav" data-toggle="collapse" data-target="#extractedcss" aria-expanded="false" aria-controls="extractedcss"><i class="far fa-minus-square collapseIcon"></i>
+                </button>
+            </div>
+            <div id="extractedcss">
+                <ul class="list-group collapse show rainbow-show" id="eCssSection"></ul>
+            </div>
+          
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent" style="background-color: #2c3134;">
+            <div class="container-fluid">ed
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle d-inline">
+                        <button type="button" class="navbar-toggler"> <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <div class="logo">
+                        <div class="photo">
+                            <img src="../assets/img/logo.png" alt="HCDLAB">
+                        </div> <a href="javascript:void(0)" class="simple-text logo-mini" style="font-weight: 1000;">
                         HCDLAB-DSTUDIO
                         </a>
-                        </div>
-                        <a class="navbar-brand" href="javascript:void(0)"></a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-bar navbar-kebab"></span>
-                        <span class="navbar-toggler-bar navbar-kebab"></span>
-                        <span class="navbar-toggler-bar navbar-kebab"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav  mr-auto">
-                            <li class="search-bar input-group">
-                                <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
-                                    <span class="d-lg-none d-md-block">Search website</span>
-                                </button>
-                            </li>
-
-                            <li class="dropdown nav-item">
-                                <button id="selectorBtn" style="color: #c3c3c3;
-    background: #303040;
-    border: 1px;
-    /* border-radius: 5px; */
-    /* border-color: #fa5731; */
-    padding: 5px;"> <i class="tim-icons icon-tap-02"></i></button>
-
-                            </li>
-
-                            <li class="dropdown nav-item">
-                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <i class="tim-icons icon-settings"></i>
-                                    <b class="caret d-none d-lg-block d-xl-block"></b>
-                                    <p class="d-lg-none">
-                                        settings to think about
-                                    </p>
-                                </a>
-                                <ul class="dropdown-menu dropdown-navbar">
-                                    <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">something</a></li>
-                                    <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">otherthing</a></li>
-                                    <li class="dropdown-divider"></li>
-                                    <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">the thing</a></li>
-                                </ul>
-                            </li>
-                            <li class="separator d-lg-none"></li>
-                        </ul>
-                    </div>
+                    <a class="navbar-brand" href="javascript:void(0)"></a>
                 </div>
-            </nav>
-            <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search for website">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="tim-icons icon-simple-remove" onclick="hidemodal()"></i>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav  mr-auto">
+                        <li class="search-bar input-group">
+                            <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
+                                <span class="d-lg-none d-md-block">Search website</span>
                             </button>
-                        </div>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <button id="selectorBtn" style="color: #c3c3c3;
+                                    background: #303040;
+                                    border: 1px;
+                                    /* border-radius: 5px; */
+                                    /* border-color: #fa5731; */
+                                    padding: 5px;"> <i class="tim-icons icon-tap-02"></i>
+                            </button>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i class="tim-icons icon-settings"></i>
+                                <b class="caret d-none d-lg-block d-xl-block"></b>
+                                <p class="d-lg-none">settings to think about</p>
+                            </a>
+                            <ul class="dropdown-menu dropdown-navbar">
+                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">something</a>
+                                </li>
+                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">otherthing</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">the thing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="separator d-lg-none"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search for website">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <i class="tim-icons icon-simple-remove" onclick="hidemodal()"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-
-            <!-- End Navbar -->
-            <div class="content" style="    padding-bottom: 0;">
-                <div class="row h-50">
-                    <div class="col-12" style="
+        </div>
+        <!-- End Navbar -->
+        <div class="content" style="    padding-bottom: 0; background-color: #3c3c3c;
+    height: 100%;">
+            <div class="row h-50">
+                <div class="col-12" style="
                      height: 400px;
                      ">
-                        <div class="card card-chart">
-                            <div id="loaded-site" class="card-body" style="
+                    <div class="card card-chart">
+                        <div id="loaded-site" class="card-body" style="
                            height: 500px; overflow-y: scroll; overflow-x: hidden; 
                            ">
-                                <div class="chart-area">
-                                    <!--website-->
+                            <div class="chart-area">
 
-                                    <head>
+
+
+
+
+                                  <head>
                                         <meta charset="utf-8">
                                         <script type="text/javascript" src="jquery.js"></script>
                                         <script type="text/javascript" src="jquery-ui.min.js"></script>
@@ -611,7 +308,7 @@ direction: ltr;
                                  <![endif]-->
                                     </head>
 
-                                    <body class="body Home">
+                                    <body class="body Home" background="white" style="background-color: white;" > 
                                         <div class="totopshow">
 
                                         </div>
@@ -1145,63 +842,52 @@ direction: ltr;
                                             })();
                                         </script>
                                     </body>
-                                    <!--end-->
-                                </div>
+                             
+                               <!-- <iframe id="loaded-site" name="loadedSite" src="file:///home/pandora/Desktop/hcdlabdstudio/HCDLABDSTUDIO/loadedSites/Is%20it%20possible%20to%20download%20a%20websites%20entire%20code,%20HTML,%20CSS%20and%20JavaScript%20files_%20-%20Stack%20Overflow.html" sandbox="allow-same-origin Access-Control-Allow-Origin allow-scripts allow-popups allow-forms allow-modals allow-top-navigation-by-user-activation" width="100%" height="210%"></iframe> !-->
+                        
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="card card-chart" style="    margin-bottom: 0px;
-    margin-top: 9%;">
-                            <div class="card-header ">
-                                <div class="row">
-                                    <div class="col-sm-6 text-left">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn btn-sm btn-primary btn-simple " id="0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="showreact()">
-                                                <input type="radio" name="options" checked>
-                                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block"> React Code</span>
-                                                <span class="d-block d-sm-none">
-   <i class="tim-icons icon-atom"></i>
-   </span>
-                                            </label>
-                                            <label class="btn btn-sm btn-primary btn-simple" id="1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="showcss()">
-                                                <input type="radio" class="d-none d-sm-none" name="options">
-                                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block"> CSS Code</span>
-                                                <span class="d-block d-sm-none">
-   <i class="tim-icons icon-html5"></i>
-   </span>
-                                            </label>
-                                            <label class="btn btn-sm btn-primary btn-simple active" id="2" onclick="showcom()">
-                                                <input type="radio" class="d-none" name="options">
-                                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Component</span>
-                                                <span class="d-block d-sm-none">
-   <i class="tim-icons icon-components"></i>
-   </span>
-                                            </label>
-                                        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="card card-chart" style="    margin-bottom: 0px;margin-top: 9%;">
+                        <div class="card-header ">
+                            <div class="row">
+                                <div class="col-sm-6 text-left"></div>
+                                <div class="col-sm-6">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-sm btn-primary btn-simple " id="0" onclick="showreact()">
+                                            <input type="radio" name="options" checked> <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block"> React Code</span>
+                                            <span class="d-block d-sm-none">
+                                               <i class="tim-icons icon-atom"></i>
+                                               </span>
+                                        </label>
+                                        <label class="btn btn-sm btn-primary btn-simple" id="1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="showcss()">
+                                            <input type="radio" class="d-none d-sm-none" name="options"> <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block"> CSS Code</span>
+                                            <span class="d-block d-sm-none">
+                                                 <i class="tim-icons icon-html5"></i>
+                                                </span>
+                                        </label>
+                                        <label class="btn btn-sm btn-primary btn-simple active" id="2" onclick="showcom()">
+                                            <input type="radio" class="d-none" name="options"> <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Component</span>
+                                            <span class="d-block d-sm-none">
+                                                <i class="tim-icons icon-components"></i>
+                                                </span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body " style="height: 300px;    background: #fa5731;">
-                                <div class="chart-area text-center ">
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-body text-left">
-                                            <pre><code class="language-javascript">
-   $(document).ready(function() {
-   $().ready(function() {
-   $sidebar = $('.sidebar');
-   $navbar = $('.navbar');
-   $main_panel = $('.main-panel');
-   $full_page = $('.full-page');
-   ...
-   </code></pre>
-                                        </div>
+                        </div>
+                        <div class="card-body " style="height: 300px;   background: #41474c;">
+                            <div class="chart-area text-center ">
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body text-left" id="reactcode"> 
+
                                     </div>
-                                    <div class="collapse overflow-auto" id="csscode">
+                                </div>
+                                 <div class="collapse overflow-auto" id="csscode">
                                         <div class="card card-body text-left ">
                                             <pre><code class="language-javascript ">
    b,
@@ -1221,205 +907,90 @@ direction: ltr;
    </code></pre>
                                         </div>
                                     </div>
-                                    <style>
-                                        #com > text-decoration-color: {
-                                            all: unset;
-                                        }
-                                    </style>
+                                <style>
+                                    #com > text-decoration-color: {
+                                                                            all: unset;
+                                                                        }
+                                </style>
+                                <div id="displayComponent">
 
-                                    <div id="com">
-                                        <link rel="stylesheet" href="https://unpkg.com/@shopify/polaris@4.15.2/styles.min.css" />
-                                        <div class="tab-pane fade " id="list-button" role="tabpanel" aria-labelledby="list-button-list">
 
-                                            <h1>Button</h1>
-                                            <p>
-Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.</p>
-
-                                            <div id="Polaris-Button" onclick="getcss($(this).attr('id'))" style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb;">
-                                                <button type="but.css( " background-color " );ton" class="Polaris-Button"><span class="Polaris-Button__Content"><span class="Polaris-Button__Text">Add product</span></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="list-link" role="tabpanel" aria-labelledby="list-link-list">
-                                            <div id="Polaris-Link" onclick="getcss($(this).attr('id'))" style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb;"><a class="Polaris-Link" href="#" data-polaris-unstyled="true">fulfilling orders</a></div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="list-card" role="tabpanel" aria-labelledby="list-card-list">
-
-                                            <div id="Polaris-Card" onclick="getcss($(this).attr('id'))" style=" color: rgba(39, 34, 34, 0.8) !important;--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb;    ">
-                                                <div class="Polaris-Card" style="color: red;
-    text-align: left;background-color: #e6dfdf;">
-                                                    <div class="Polaris-Card__Header">
-                                                        <h2 class="Polaris-Heading">Online store dashboard</h2>
-                                                    </div>
-                                                    <div class="Polaris-Card__Section">
-                                                        <p>View a summary of your online store’s performance.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="tab-pane fade" id="list-caption" role="tabpanel" aria-labelledby="list-caption-list">
-                                            <div id="Polaris-List" onclick="getcss($(this).attr('id'))" style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb;">
-                                                <ul class="Polaris-List">
-                                                    <li class="Polaris-List__Item">Order #1001
-                                                        <p class="Polaris-Caption">Received April 21, 2017</p>
-                                                    </li>
-                                                    <li class="Polaris-List__Item">Order #1002
-                                                        <p class="Polaris-Caption">Received April 22, 2017</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-left">
-                        <div class="card card-chart" style="    margin-bottom: 0px;
-    margin-top: 29%;">
-                            <div class="card-header">
-                                <h5 class="card-category">HCDLAB'S DESIGN SYTEM  </h5>
-                                <div class="form-control input">
-                                    <i class="tim-icons icon-zoom-split text-success"></i>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action" id="list-button-list" data-toggle="list" href="#list-button" role="tab" aria-controls="button">button</a>
-                                    <a class="list-group-item list-group-item-action" id="list-link-list" data-toggle="list" href="#list-link" role="tab" aria-controls="link">Link</a>
-                                    <a class="list-group-item list-group-item-action" id="list-card-list" data-toggle="list" href="#list-card" role="tab" aria-controls="card">card</a>
-                                    <a class="list-group-item list-group-item-action" id="list-caption-list" data-toggle="list" href="#list-caption" role="tab" aria-controls="caption">Caption</a>
-                                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">button</a>
-                                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tags</a>
-                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Avatar</a>
-                                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">button</a>
-                                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tags</a>
-                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Avatar</a>
+                   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <script type="text/javascript">
-                    var selectedComponentClass = '';
-                    var uncheck = '';
-                    var oldvalue = '';
-
-                    function cssChecked(id) {
-
-
-                        var attribute = id.replace("input", "");
-
-                        if (uncheck == 0 || uncheck == "") {
-                            oldvalue = $("#component" + attribute).val();
-
-                            newvalue = $("#inputValue" + attribute).val();
-
-                            $("#component" + attribute).val(newvalue);
-                            $(selectedComponentClass).css(attribute, newvalue);
-                            uncheck = 1;
-                        } else if (uncheck == 1) {
-
-                            $("#component" + attribute).val(oldvalue);
-
-                            $(selectedComponentClass).css(attribute, oldvalue);
-                            uncheck = 0;
-                            oldvalue = '';
-                        }
-
-                    }
-
-                    function applyCss() {
-                        alert("Css had been applied!!");
-
-                    }
-
-                    function GenerateDesignSystem() {
-                        alert("gs is being genarated!");
-
-                    }
-
-                    function getcss(id) {
-
-                        var component = $("#" + id);
-
-                        styleProps = component.css(["width", "height", "margin", "padding", "background-color", "background-image", "color", "font-size", "font-family", "border-raduis", "border-color", "border-size", "Allign-items", "Allign-Content", "Allign-text", "Allign-self",
-"transform",
-"transformBox",
-"transformOrigin",
-"transformStyle",
-"transitionDelay",
-"transitionDuration",
-"transitionProperty",
-"transitionTimingFunction",
-"animationDelay",
-"animationDirection",
-"animationDuration",
-"animationFillMode",
-"animationIterationCount",
-"animationName",
-"animationPlayState",
-"animationTimingFunction",
-"fontStyle",
-"fontVariantCaps",
-"fontWeight",]);
-
-                        for (const [attribute, value] of Object.entries(styleProps)) {
-
-                            $("#component" + attribute).val(value);
-
-                        }
-
-                        for (const [attribute, value] of Object.entries(styleProps)) {
-
-                            selectedComponentClass = "." + id;
-                            $("#component" + attribute).on("change paste keyup", function() {
-                                newvalue = $("#component" + attribute).val();
-
-                                $("." + id).css(attribute, newvalue);
-                            });
-
-                        }
-
-                    }
-                </script>
+                <div class="col-lg-3 text-left">
+                    <div class="card card-chart" style="    margin-bottom: 0px; margin-top: 29%;">
+                        <div class="card-header">
+                            <h5 class="card-category">HCDLAB'S DESIGN SYTEM  </h5>
+                            <div class="form-control input"> <i class="tim-icons icon-zoom-split text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="componentsList" class="list-group" id="list-tab" role="tablist"> 
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--
-            <footer class="footer">
-                <div class="container-fluid">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="https://jhcheng.me/lab/" class="nav-link">
-   About Us
-   </a>
-                        </li>
-                        </li>
-                    </ul>
-                    <div class="copyright">
-                        Powered by <a href="javascript:void(0)" target="_blank">SopifyPolaris</a> and Developed </i> by
-                        <a href="javascript:void(0)" target="_blank">HCDLAB</a> for design system community
-                    </div>
-                </div>
-            </footer>
+            <script type="text/javascript">
+            </script>
         </div>
-    </div>
- -->
-    <!--   Core JS Files   -->
-    <script src="../assets/js/core/jquery.min.js"></script>
-    <script src="../assets/js/core/popper.min.js"></script>
-    <script src="../assets/js/core/bootstrap.min.js"></script>
-    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <div id="selector">
+        <!--   Core JS Files   -->
+        <script src="../assets/js/core/jquery.min.js"></script>
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+        <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <div id="selector">
+            <div id="selector-top"></div>
+            <div id="selector-left"></div>
+            <div id="selector-right"></div>
+            <div id="selector-bottom"></div>
+        </div>
+        <style type="text/css">
+            #selector-top,
+                        #selector-bottom {
+                            background: blue;
+                            height: 3px;
+                            position: fixed;
+                            transition: all 300ms ease;
+                        }
+                        
+                        #selector-left,
+                        #selector-right {
+                            background: blue;
+                            width: 3px;
+                            position: fixed;
+                            transition: all 300ms ease;
+                        }
+                        
+                        .n {
+                            -webkit-transform: scale(3) translateX(100px)
+                        }
+        </style>
+        <script type="text/javascript">
+        </script>
+        <!-- Chart JS -->
+        <!--  Notifications Plugin    -->
+        <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+        <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
+        <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+        <script src="../assets/js/rainbow-custom.min.js"></script>
+        <script src="../assets/js/navbar.js"></script>
+
+          <div id="selector">
         <div id="selector-top"></div>
         <div id="selector-left"></div>
         <div id="selector-right"></div>
         <div id="selector-bottom"></div>
     </div>
-    <style type="text/css">
+
+    
+   <style type="text/css">
         #selector-top,
         #selector-bottom {
             background: blue;
@@ -1439,9 +1010,155 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
         .n {
             -webkit-transform: scale(3) translateX(100px)
         }
+
     </style>
-    <script type="text/javascript">
-        var count = 1;
+
+
+
+        <script type="text/javascript">
+
+
+
+var globaleStyles = ["width", "height", "margin-top","margin-bottom","margin-left", "margin-right","padding-top","padding-bottom","padding-right", "padding-left","background-color", "background-image", "color", "font-size", "font-family", "border-raduis", "border-color", "border-size", 
+"fontStyle",
+"fontVariantCaps",
+"fontWeight",];
+
+
+
+
+var styleProps=[];
+         
+ let components = [{
+    name : 'button',
+    html :'<div  style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"><button onclick=\"getcss($(this).attr(\'class\'))\" type="button" class="Polaris-Button"><span class="Polaris-Button__Content"><span class="Polaris-Button__Text">Add product</span></span></button></div>',
+    css :'.Polaris-Button { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 3.6rem; min-width: 3.6rem; margin: 0; padding: .7rem 1.6rem; background: linear-gradient(180deg,#fff,#f9fafb); border: .1rem solid var(--p-border,#c4cdd5); box-shadow: 0 1px 0 0 rgba(22,29,37,.05); border-radius: 3px; line-height: 1; color: #212b36; text-align: center; cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none; text-decoration: none; transition-property: background,border,box-shadow; transition-duration: var(--p-override-none,.2s); transition-timing-function: var(--p-override-none,cubic-bezier(.64,0,.35,1)); -webkit-tap-highlight-color: transparent; }',
+    react:'<Button>Add product</Button>'
+},
+
+    {name : 'link',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"><a class="Polaris-Link" onclick=\"getcss($(this).attr(\'class\'))\" href="#" data-polaris-unstyled="true">fulfilling orders</a></div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="#">fulfilling orders</Link>'
+},
+{
+    name : 'card',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <div class="Polaris-Card" onclick=\"getcss($(this).attr(\'class\'))\" style="    background-color: #3a3a3a;text-align: left;}"> <div class="Polaris-Card__Header"> <h2 class="Polaris-Heading">Online store dashboard</h2> </div> <div class="Polaris-Card__Section"> <p>View a summary of your online store’s performance.</p> </div> </div> </div>',
+    css :'.Polaris-Button { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 3.6rem; min-width: 3.6rem; margin: 0; padding: .7rem 1.6rem; background: linear-gradient(180deg,#fff,#f9fafb); border: .1rem solid var(--p-border,#c4cdd5); box-shadow: 0 1px 0 0 rgba(22,29,37,.05); border-radius: 3px; line-height: 1; color: #212b36; text-align: center; cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none; text-decoration: none; transition-property: background,border,box-shadow; transition-duration: var(--p-override-none,.2s); transition-timing-function: var(--p-override-none,cubic-bezier(.64,0,.35,1)); -webkit-tap-highlight-color: transparent; }',
+    react:'<Button>Add product</Button>'
+},
+
+    {name : 'textfield',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;text-align:left;"> <div class=""> <div class="Polaris-Labelled__LabelWrapper"> <div class="Polaris-Label" style="text-align:left;" onclick=\"getcss($(this).attr(\'class\'))\"><label id="PolarisTextField2Label" for="PolarisTextField2" class="Polaris-Label__Text">Store name</label></div> </div> <div class="Polaris-Connected"> <div class="Polaris-Connected__Item Polaris-Connected__Item--primary"> <div class="Polaris-TextField Polaris-TextField--hasValue"><input id="PolarisTextField2" class="Polaris-TextField__Input" aria-labelledby="PolarisTextField2Label" aria-invalid="false" aria-multiline="false" value="Jaded Pixel"> <div class="Polaris-TextField__Backdrop"></div> </div> </div> </div> </div> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+  {name : 'caption',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <ul class="Polaris-List"> <li class="Polaris-List__Item">Order #1001 <p class="Polaris-Caption" onclick=\"getcss($(this).attr(\'class\'))\">Received April 21, 2017</p> </li> <li class="Polaris-List__Item">Order #1002 <p class="Polaris-Caption">Received April 22, 2017</p> </li> </ul> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+  {name : 'header',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <h2 class="Polaris-Heading" onclick=\"getcss($(this).attr(\'class\'))\">Online store dashboard</h2> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+ {name : 'textContainer',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <div class="Polaris-TextContainer"> <h2 class="Polaris-Heading" onclick=\"getcss($(this).attr(\'class\'))\">Install the Shopify POS App</h2> <p>Shopify POS is the easiest way to sell your products in person. Available for iPad, iPhone, and Android.</p> </div> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+ {name : 'dataTable',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <div class="Polaris-Page"> <div class="Polaris-Page-Header" onclick=\"getcss($(this).attr(\'class\'))\"> <div class="Polaris-Page-Header__MainContent"> <div class="Polaris-Page-Header__TitleActionMenuWrapper"> <div> <div class="Polaris-Header-Title__TitleAndSubtitleWrapper"> <div class="Polaris-Header-Title"> <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeLarge">Sales by product</h1> </div> </div> </div> </div> </div> </div> <div class="Polaris-Page__Content"> <div class="Polaris-Card" onclick=\"getcss($(this).attr(\'class\'))\"> <div class=""> <div class="Polaris-DataTable__Navigation"><button type="button" class="Polaris-Button Polaris-Button--disabled Polaris-Button--plain Polaris-Button--iconOnly" disabled="" aria-label="Scroll table left one column"><span class="Polaris-Button__Content"><span class="Polaris-Button__Icon"><span class="Polaris-Icon"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"> <path d="M12 16a.997.997 0 0 1-.707-.293l-5-5a.999.999 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414L8.414 10l4.293 4.293A.999.999 0 0 1 12 16" fill-rule="evenodd"></path> </svg></span></span></span></button><button type="button" class="Polaris-Button Polaris-Button--plain Polaris-Button--iconOnly" aria-label="Scroll table right one column"><span class="Polaris-Button__Content"><span class="Polaris-Button__Icon"><span class="Polaris-Icon"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"> <path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16" fill-rule="evenodd"></path> </svg></span></span></span></button></div> <div class="Polaris-DataTable"> <div class="Polaris-DataTable__ScrollContainer"> <table class="Polaris-DataTable__Table"> <thead> <tr> <th data-polaris-header-cell="true" class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--firstColumn Polaris-DataTable__Cell--header" scope="col">Product</th> <th data-polaris-header-cell="true" class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--header Polaris-DataTable__Cell--numeric" scope="col">Price</th> <th data-polaris-header-cell="true" class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--header Polaris-DataTable__Cell--numeric" scope="col">SKU Number</th> <th data-polaris-header-cell="true" class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--header Polaris-DataTable__Cell--numeric" scope="col">Net quantity</th> <th data-polaris-header-cell="true" class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--header Polaris-DataTable__Cell--numeric" scope="col">Net sales</th> </tr> <tr> <th class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--firstColumn Polaris-DataTable__Cell--total" scope="row">Totals</th> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--total"></td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--total"></td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--total Polaris-DataTable__Cell--numeric">255</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--total Polaris-DataTable__Cell--numeric">$155,830.00</td> </tr> </thead> <tbody> <tr class="Polaris-DataTable__TableRow"> <th class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--firstColumn" scope="row">Emerald Silk Gown</th> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$875.00</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">124689</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">140</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$122,500.00</td> </tr> <tr class="Polaris-DataTable__TableRow"> <th class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--firstColumn" scope="row">Mauve Cashmere Scarf</th> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$230.00</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">124533</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">83</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$19,090.00</td> </tr> <tr class="Polaris-DataTable__TableRow"> <th class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--firstColumn" scope="row">Navy Merino Wool Blazer with khaki chinos and yellow belt</th> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$445.00</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">124518</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">32</td> <td class="Polaris-DataTable__Cell Polaris-DataTable__Cell--verticalAlignTop Polaris-DataTable__Cell--numeric">$14,240.00</td> </tr> </tbody> </table> </div> </div> </div> </div> </div> </div> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+ {name : 'list',
+    html :'<div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;"> <ul class="Polaris-List" onclick=\"getcss($(this).attr(\'class\'))\"> <li class="Polaris-List__Item">Yellow shirt</li> <li class="Polaris-List__Item">Red shirt</li> <li class="Polaris-List__Item">Green shirt</li> </ul> </div>',
+    css :'.Polaris-Link { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline; text-align: inherit; padding: 0; background: none; border: 0; font-size: inherit; color: var(--p-interactive,#006fbb); text-decoration: none; cursor: pointer; position: relative; }',
+    react:'<Link url="https://help.shopify.com/manual">fulfilling orders</Link>'
+},
+ 
+
+
+
+
+]
+
+
+
+
+
+components.forEach(function (arrayItem) {
+  
+
+    $("#componentsList").append('<a class="list-group-item list-group-item-action" onclick="showComponent(\''+arrayItem["name"]+'\')" id="list-'+arrayItem["name"]+'-list" data-toggle="list" href="#list-'+arrayItem["name"]+'" role="tab" aria-controls="'+arrayItem["name"]+'">'+arrayItem["name"]+'</a>');
+
+});
+
+
+
+
+function showComponent(componentName){
+    const component = components.find( ({ name }) => name === componentName );
+
+     $("#displayComponent").empty();
+     $("#reactcode").empty();
+     $("#csscode").empty();
+
+      $("#displayComponent").append(' <div class="tab-pane fade " id="list-'+component["name"]+'" role="tabpanel" aria-labelledby="list-'+component["name"]+'-list"> '+component['html']+' </div>');
+      $("#reactcode").append('"<pre><code id="reactcode" class="language-javascript"> '+component['react']+'</code></pre>"');
+       $("#csscode").append('"<pre><code id="csscode" class="language-javascript"> '+component['css']+'</code></pre>"');
+
+
+
+
+}
+
+//get css of the selected component, update sidebar inputs viceversa
+
+function getcss(element) {
+
+                        var component = $("." + element);
+
+                        styleProps = component.css(globaleStyles);
+
+
+                        $("#componentClass").val("."+element);
+
+
+                        for (const [attribute, value] of Object.entries(styleProps)) {
+
+                            $("#component" + attribute).val(value);
+
+                        }
+
+                        for (const [attribute, value] of Object.entries(styleProps)) {
+
+                            selectedComponentClass = "." + element;
+
+
+
+
+                            $("#component" + attribute).on("change paste keyup", function() {
+                                
+
+                                
+                                newvalue = $("#component" + attribute).val();
+
+                                $("." + element).css(attribute, newvalue);
+                            });
+
+                        }
+
+
+                        appendToggleElementStateSC(element);
+
+                    }
+
+
+//exttract css from website
+ var count = 1;
 
         $("#selectorBtn").click(function() {
 
@@ -1487,7 +1204,7 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
                     targetOffset = $target[0].getBoundingClientRect(),
                         targetHeight = targetOffset.height,
                         targetWidth = targetOffset.width;
-                    console.log(targetOffset);
+                   
 
                     elements.top.css({
                         left: (targetOffset.left - 4),
@@ -1529,7 +1246,7 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
               
               
 
-                    for (const attribute of styleProps) {
+                    for (const attribute of globaleStyles) {
                         value = styles.getPropertyValue(attribute);
 
                         if (value !=="") {
@@ -1560,6 +1277,35 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
 
 
 
+//apply checked css to sidebar
+              function cssChecked(id) {
+                var oldvalue = '';
+
+                var attribute = id.replace("input","");
+                var check = document.getElementById(id).checked;
+
+                if(check){
+
+                    
+                    oldvalue = $("#component" + attribute).val();
+                            newvalue = $("#inputValue" + attribute).val();
+                            $("#component" + attribute).val(newvalue);
+                             $("#component" + attribute).change();
+
+
+
+                }else {
+                       
+                     //fix this after
+                }
+
+
+
+
+            }
+
+//get hover and stuff
+
 function getToggleElementState(element,state,attribute){
 
   var classList = $(element).attr('class').split(/\s+/);
@@ -1579,7 +1325,34 @@ for (const element of classList) {
     styles.push([element, stateStyle ]);
      
   }
- 
+}
+
+
+
+return styles[styles.length-1][1];
+
+
+}
+
+function getToggleElementStateSC(element,state,attribute){
+
+  var classList = $("."+element).attr('class').split(/\s+/);
+  var styles= [];
+
+
+
+for (const element of classList) {
+
+
+
+  let stateStyle= $( "."+element+":"+state ).css(attribute);
+
+
+  if(stateStyle != "undefined"){
+
+    styles.push([element, stateStyle ]);
+     
+  }
 }
 
 
@@ -1590,6 +1363,45 @@ return styles[styles.length-1][1];
 }
 
 
+//append hover and stuff
+
+function appendToggleElementStateSC(element){
+      var toggleElementstates =['hover','focus','visited','active','focus-within'];
+           var styleclasses = ["background-color","color","border-color"];
+           var array = [];
+
+
+                      for (const att of toggleElementstates) {
+           
+                for(const stclass of styleclasses){
+                    value = getToggleElementStateSC(element,att,stclass);
+                    $("#component" +att+ stclass).val(value);
+
+
+                     $("#component" +  att+ stclass).on("change paste keyup", function() {
+                                
+
+                                
+                                newvalue = $("#component"  +att+ stclass).val();
+
+                                $("." + element+':'+att).css(stclass, newvalue);
+                            });
+
+
+                  
+                }
+
+
+                 
+
+
+                console.log(value);
+
+          
+           }
+
+
+}
 
 function appendToggleElementState(element){
            var toggleElementstates =['hover','focus','visited','active','focus-within'];
@@ -1618,195 +1430,50 @@ function appendToggleElementState(element){
           
            }
 
-       
+
+       }
+
+
+
+function applyCss(elemetClass){
+
+
+
+
+alert("css has been applied");
+
+
+
+
+
+
+
 }
 
-                    var selectedComponentClasst = '';
-                    var uncheckt = '';
-                    var oldvaluet = '';
-
-                    function cssCheckedtoggle(id,att) {
 
 
 
-                         $("#component" +att+ attribute).val("newvalue");
-                        
-                        var attribute = id.replace("input"+att, "");
+function download(filename, text) {
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', filename);
 
-                        if (uncheckt == 0 || uncheckt == "") {
-                            oldvalue = $("#component" +att+ attribute).val();
+    if (document.createEvent) {
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        pom.dispatchEvent(event);
+    }
+    else {
+        pom.click();
+    }
+}
 
-                            newvalue = $("#inputValue"+att + attribute).val();
+     
+            
 
-                            $("#component" +att+ attribute).val(newvalue);
-                            $(selectedComponentClasst).css(attribute, newvalue);
-                            uncheck = 1;
-                        } else if (uncheckt == 1) {
 
-                            $("#component" +att+ attribute).val(oldvalue);
-
-                            $(selectedComponentClasst).css(attribute, oldvalue);
-                            uncheckt = 0;
-                            oldvalue = '';
-                        }
-
-                    }
-
-    </script>
-    <!-- Chart JS -->
-    <!--  Notifications Plugin    -->
-    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
-    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-    <script src="../assets/js/rainbow-custom.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $().ready(function() {
-                $sidebar = $('.sidebar');
-                $navbar = $('.navbar');
-                $main_panel = $('.main-panel');
-
-                $full_page = $('.full-page');
-
-                $sidebar_responsive = $('body > .navbar-collapse');
-                sidebar_mini_active = true;
-                white_color = false;
-
-                window_width = $(window).width();
-
-                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
-
-                $('.fixed-plugin a').click(function(event) {
-                    if ($(this).hasClass('switch-trigger')) {
-                        if (event.stopPropagation) {
-                            event.stopPropagation();
-                        } else if (window.event) {
-                            window.event.cancelBubble = true;
-                        }
-                    }
-                });
-
-                $('.fixed-plugin .background-color span').click(function() {
-                    $(this).siblings().removeClass('active');
-                    $(this).addClass('active');
-
-                    var new_color = $(this).data('color');
-
-                    if ($sidebar.length != 0) {
-                        $sidebar.attr('data', new_color);
-                    }
-
-                    if ($main_panel.length != 0) {
-                        $main_panel.attr('data', new_color);
-                    }
-
-                    if ($full_page.length != 0) {
-                        $full_page.attr('filter-color', new_color);
-                    }
-
-                    if ($sidebar_responsive.length != 0) {
-                        $sidebar_responsive.attr('data', new_color);
-                    }
-                });
-
-                $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
-                    var $btn = $(this);
-
-                    if (sidebar_mini_active == true) {
-                        $('body').removeClass('sidebar-mini');
-                        sidebar_mini_active = false;
-                        blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
-                    } else {
-                        $('body').addClass('sidebar-mini');
-                        sidebar_mini_active = true;
-                        blackDashboard.showSidebarMessage('Sidebar mini activated...');
-                    }
-
-                    // we simulate the window Resize so the charts will get updated in realtime.
-                    var simulateWindowResize = setInterval(function() {
-                        window.dispatchEvent(new Event('resize'));
-                    }, 180);
-
-                    // we stop the simulation of Window Resize after the animations are completed
-                    setTimeout(function() {
-                        clearInterval(simulateWindowResize);
-                    }, 1000);
-                });
-
-                $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
-                    var $btn = $(this);
-
-                    if (white_color == true) {
-
-                        $('body').addClass('change-background');
-                        setTimeout(function() {
-                            $('body').removeClass('change-background');
-                            $('body').removeClass('white-content');
-                        }, 900);
-                        white_color = false;
-                    } else {
-
-                        $('body').addClass('change-background');
-                        setTimeout(function() {
-                            $('body').removeClass('change-background');
-                            $('body').addClass('white-content');s
-                        }, 900);
-
-                        white_color = true;
-                    }
-
-                });
-
-                $('.light-badge').click(function() {
-                    $('body').addClass('white-content');
-                });
-
-                $('.dark-badge').click(function() {
-                    $('body').removeClass('white-content');
-                });
-            });
-        });
-    </script>
-    <script>
-        function hideComponent(id) {
-            var x = document.getElementById(id);
-
-            x.style.display = "none";
-
-        }
-
-        function showcss() {
-            $("#csscode").show();
-            $("#collapseExample").hide();
-            $("#com").hide();
-
-        }
-
-        function showcom() {
-            $("#csscode").hide();
-            $("#collapseExample").hide();
-            $("#com").show();
-
-        }
-
-        function showreact() {
-            $("#csscode").hide();
-            $("#collapseExample").show();
-            $("#com").hide();
-
-        }
-
-        function hidemodal() {
-            $('#searchModal').hide();
-        }
-    </script>
-    <script type="text/javascript">
-        $('iframe').load(function() {
-            $('iframe').contents().find("head")
-                .append($("<style type='text/css'>  body{background-color: red;}  </style>"));
-        });
-    </script>
+        </script>
 </body>
+
 
 </html>
